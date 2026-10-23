@@ -1,0 +1,37 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Secrets and local configurations
+.env
+*.env
+*.pem
+*.key
+*.token
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local runtime storage
+storage_data/
+*.log
+
+# Bulk test outputs (manifests and summary json are preserved)
+test_pack/outputs/**/*.wav
+test_pack/outputs/**/*.mp3
+
+# Root-level duplicate video (audio_pack/final_video.mp4 is preserved)
+/final_video.mp4
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

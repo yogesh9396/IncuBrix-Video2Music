@@ -1,0 +1,15 @@
+{
+  "prompt": "musique cin\u00e9matographique dramatique avec piano m\u00e9lodique et cordes \u00e9motionnelles",
+  "duration_s": 16.0,
+  "tempo_bpm": 78.0,
+  "loopable": false,
+  "seed": 204,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": [
+      "wav",
+      "mp3"
+    ]
+  }
+}

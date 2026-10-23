@@ -1,0 +1,13 @@
+{
+  "prompt": "bouncy playful lighthearted cartoon comedy music with pizzicato and marimba",
+  "duration_s": 18.0,
+  "tempo_bpm": 120.0,
+  "key": "F major",
+  "loopable": false,
+  "seed": 107,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": ["wav", "mp3"]
+  }
+}

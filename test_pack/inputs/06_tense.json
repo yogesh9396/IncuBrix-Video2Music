@@ -1,0 +1,13 @@
+{
+  "prompt": "suspenseful tense thriller soundtrack with ominous bass drone and ticking rhythm",
+  "duration_s": 20.0,
+  "tempo_bpm": 96.0,
+  "key": "E minor",
+  "loopable": false,
+  "seed": 106,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": ["wav", "mp3"]
+  }
+}

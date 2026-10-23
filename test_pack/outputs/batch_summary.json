@@ -1,0 +1,137 @@
+[
+  {
+    "case": "01_cinematic",
+    "status": "succeeded",
+    "duration_s": 25.0,
+    "elapsed_s": 1.708,
+    "lufs": -16.09,
+    "true_peak_dbtp": -1.0,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "02_lofi",
+    "status": "succeeded",
+    "duration_s": 20.0,
+    "elapsed_s": 1.548,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.95,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "03_corporate",
+    "status": "succeeded",
+    "duration_s": 30.0,
+    "elapsed_s": 1.975,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.42,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "04_electronic",
+    "status": "succeeded",
+    "duration_s": 24.0,
+    "elapsed_s": 1.599,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.27,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "05_acoustic",
+    "status": "succeeded",
+    "duration_s": 22.0,
+    "elapsed_s": 1.615,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.99,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "06_tense",
+    "status": "succeeded",
+    "duration_s": 20.0,
+    "elapsed_s": 1.424,
+    "lufs": -16.22,
+    "true_peak_dbtp": -1.0,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "07_playful",
+    "status": "succeeded",
+    "duration_s": 18.0,
+    "elapsed_s": 1.276,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.88,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "08_ambient",
+    "status": "succeeded",
+    "duration_s": 25.0,
+    "elapsed_s": 1.916,
+    "lufs": -16.0,
+    "true_peak_dbtp": -2.09,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "09_rock",
+    "status": "succeeded",
+    "duration_s": 22.0,
+    "elapsed_s": 1.526,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.05,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "10_product_launch_sections",
+    "status": "succeeded",
+    "duration_s": 45.0,
+    "elapsed_s": 2.999,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.49,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "hard_case_01_short_5s",
+    "status": "succeeded",
+    "duration_s": 5.0,
+    "elapsed_s": 0.399,
+    "lufs": -16.0,
+    "true_peak_dbtp": -2.51,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "hard_case_02_contradictory",
+    "status": "succeeded",
+    "duration_s": 15.0,
+    "elapsed_s": 1.093,
+    "lufs": -16.0,
+    "true_peak_dbtp": -2.33,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "hard_case_03_artist_vocal",
+    "status": "succeeded",
+    "duration_s": 18.0,
+    "elapsed_s": 1.334,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.75,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "hard_case_04_non_english",
+    "status": "succeeded",
+    "duration_s": 16.0,
+    "elapsed_s": 1.269,
+    "lufs": -16.0,
+    "true_peak_dbtp": -2.02,
+    "reconstruction_error_db": -120.0
+  },
+  {
+    "case": "hard_case_05_seamless_loop",
+    "status": "succeeded",
+    "duration_s": 16.0,
+    "elapsed_s": 1.116,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.78,
+    "reconstruction_error_db": -120.0
+  }
+]

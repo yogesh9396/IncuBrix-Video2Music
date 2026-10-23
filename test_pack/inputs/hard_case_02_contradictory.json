@@ -1,0 +1,15 @@
+{
+  "prompt": "calm but aggressive high energy relaxing meditation pulse",
+  "duration_s": 15.0,
+  "tempo_bpm": 95.0,
+  "loopable": false,
+  "seed": 202,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": [
+      "wav",
+      "mp3"
+    ]
+  }
+}

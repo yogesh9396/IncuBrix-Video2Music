@@ -1,0 +1,16 @@
+{
+  "prompt": "seamless hypnotic electronic loop for continuous video playback",
+  "duration_s": 16.0,
+  "tempo_bpm": 120.0,
+  "key": "D minor",
+  "loopable": true,
+  "seed": 205,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": [
+      "wav",
+      "mp3"
+    ]
+  }
+}

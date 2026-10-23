@@ -1,0 +1,13 @@
+{
+  "prompt": "driving rock instrumental with punchy live drums and distorted bass riff",
+  "duration_s": 22.0,
+  "tempo_bpm": 128.0,
+  "key": "A minor",
+  "loopable": false,
+  "seed": 109,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": ["wav", "mp3"]
+  }
+}

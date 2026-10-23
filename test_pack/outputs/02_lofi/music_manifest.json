@@ -1,0 +1,142 @@
+{
+  "job_id": "batch_job_021_1792773223",
+  "prompt": "chill lo-fi hip hop study beats with warm vintage keys and mellow vinyl groove",
+  "duration_s": 20.0,
+  "actual_duration_s": 20.0,
+  "tempo_bpm": 74.0,
+  "key": "Eb major",
+  "seed": 102,
+  "loopable": true,
+  "sections": [
+    {
+      "start_s": 0.0,
+      "mood": "intro",
+      "beat_index": 0
+    },
+    {
+      "start_s": 6.0,
+      "mood": "build",
+      "beat_index": 7
+    },
+    {
+      "start_s": 14.0,
+      "mood": "peak",
+      "beat_index": 17
+    }
+  ],
+  "beat_times_s": [
+    0.0,
+    0.8108,
+    1.6216,
+    2.4324,
+    3.2432,
+    4.0541,
+    4.8649,
+    5.6757,
+    6.4865,
+    7.2973,
+    8.1081,
+    8.9189,
+    9.7297,
+    10.5405,
+    11.3514,
+    12.1622,
+    12.973,
+    13.7838,
+    14.5946,
+    15.4054,
+    16.2162,
+    17.027,
+    17.8378,
+    18.6486,
+    19.4595
+  ],
+  "bar_times_s": [
+    0.0,
+    3.2432,
+    6.4865,
+    9.7297,
+    12.973,
+    16.2162,
+    19.4595
+  ],
+  "stem_gains": {
+    "drums": 0.85,
+    "bass": 0.8,
+    "chords": 0.7,
+    "melody": 0.75
+  },
+  "stems_metadata": {
+    "drums": {
+      "instrument": "Synthesized Acoustic/Analog Percussion",
+      "channels": 2,
+      "gain": 0.85
+    },
+    "bass": {
+      "instrument": "Subtractive Resonant Bass",
+      "channels": 2,
+      "gain": 0.8
+    },
+    "chords": {
+      "instrument": "Polyphonic Keys & Warm Pad",
+      "channels": 2,
+      "gain": 0.7
+    },
+    "melody": {
+      "instrument": "Lead Melodic Voice",
+      "channels": 2,
+      "gain": 0.75
+    }
+  },
+  "loudness": {
+    "mix_integrated_lufs": -16.0,
+    "mix_true_peak_dbtp": -1.95,
+    "target_lufs": -16.0,
+    "reconstruction_error_db": -120.0,
+    "stems_loudness": {
+      "drums": {
+        "integrated_lufs": -25.42,
+        "true_peak_dbtp": -5.09
+      },
+      "bass": {
+        "integrated_lufs": -16.89,
+        "true_peak_dbtp": -9.95
+      },
+      "chords": {
+        "integrated_lufs": -22.09,
+        "true_peak_dbtp": -10.7
+      },
+      "melody": {
+        "integrated_lufs": -18.1,
+        "true_peak_dbtp": -11.75
+      }
+    },
+    "stem_cleanliness_bleed_db": -120.0
+  },
+  "ducking_applied": false,
+  "volume_curve": null,
+  "models_providers": {
+    "provider_name": "incubrix-multitrack-synth",
+    "provider_version": "2.1.0",
+    "synthesis_mode": "algorithmic_multitrack_synthesis",
+    "ai_assisted": false,
+    "media_marked_ai_generated": true
+  },
+  "timings": {
+    "generation_s": 0.5043,
+    "total_processing_s": 1.5434
+  },
+  "cost_estimate": {
+    "currency": "USD",
+    "estimated_cost_usd": 0.00005,
+    "cost_per_minute_usd": 0.00015
+  },
+  "warnings": [],
+  "licence_rights": {
+    "status": "fully_commercial_safe",
+    "commercial_use_permitted": true,
+    "licence_terms": "MIT / Public Domain audio synthesizers; outputs are 100% royalty-free and monetizable.",
+    "sources_md_link": "SOURCES.md",
+    "copyright_free": true
+  }
+}

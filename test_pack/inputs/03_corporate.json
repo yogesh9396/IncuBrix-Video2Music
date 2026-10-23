@@ -1,0 +1,13 @@
+{
+  "prompt": "bright inspiring corporate technology presentation background music",
+  "duration_s": 30.0,
+  "tempo_bpm": 115.0,
+  "key": "C major",
+  "loopable": false,
+  "seed": 103,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": ["wav", "mp3"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "prompt": "punchy short audio logo sting with dramatic hit",
+  "duration_s": 5.0,
+  "tempo_bpm": 120.0,
+  "key": "A minor",
+  "loopable": false,
+  "seed": 201,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": [
+      "wav",
+      "mp3"
+    ]
+  }
+}

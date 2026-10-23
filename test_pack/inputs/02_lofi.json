@@ -1,0 +1,13 @@
+{
+  "prompt": "chill lo-fi hip hop study beats with warm vintage keys and mellow vinyl groove",
+  "duration_s": 20.0,
+  "tempo_bpm": 74.0,
+  "key": "Eb major",
+  "loopable": true,
+  "seed": 102,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": ["wav", "mp3"]
+  }
+}

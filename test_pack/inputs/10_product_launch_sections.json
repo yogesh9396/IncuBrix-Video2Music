@@ -1,0 +1,30 @@
+{
+  "prompt": "warm, optimistic acoustic pop for a product launch, builds to an uplifting finish",
+  "duration_s": 45.0,
+  "tempo_bpm": 110.0,
+  "key": "C major",
+  "loopable": false,
+  "seed": 42,
+  "sections": [
+    {
+      "start_s": 0.0,
+      "mood": "calm intro"
+    },
+    {
+      "start_s": 12.5,
+      "mood": "build-up"
+    },
+    {
+      "start_s": 30.0,
+      "mood": "uplifting peak"
+    }
+  ],
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": [
+      "wav",
+      "mp3"
+    ]
+  }
+}

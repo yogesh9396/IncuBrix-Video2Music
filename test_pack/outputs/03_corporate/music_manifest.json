@@ -1,0 +1,183 @@
+{
+  "job_id": "batch_job_031_1792773224",
+  "prompt": "bright inspiring corporate technology presentation background music",
+  "duration_s": 30.0,
+  "actual_duration_s": 30.0,
+  "tempo_bpm": 115.0,
+  "key": "C major",
+  "seed": 103,
+  "loopable": false,
+  "sections": [
+    {
+      "start_s": 0.0,
+      "mood": "intro",
+      "beat_index": 0
+    },
+    {
+      "start_s": 9.0,
+      "mood": "build",
+      "beat_index": 17
+    },
+    {
+      "start_s": 21.0,
+      "mood": "peak",
+      "beat_index": 40
+    }
+  ],
+  "beat_times_s": [
+    0.0,
+    0.5217,
+    1.0435,
+    1.5652,
+    2.087,
+    2.6087,
+    3.1304,
+    3.6522,
+    4.1739,
+    4.6957,
+    5.2174,
+    5.7391,
+    6.2609,
+    6.7826,
+    7.3043,
+    7.8261,
+    8.3478,
+    8.8696,
+    9.3913,
+    9.913,
+    10.4348,
+    10.9565,
+    11.4783,
+    12.0,
+    12.5217,
+    13.0435,
+    13.5652,
+    14.087,
+    14.6087,
+    15.1304,
+    15.6522,
+    16.1739,
+    16.6957,
+    17.2174,
+    17.7391,
+    18.2609,
+    18.7826,
+    19.3043,
+    19.8261,
+    20.3478,
+    20.8696,
+    21.3913,
+    21.913,
+    22.4348,
+    22.9565,
+    23.4783,
+    24.0,
+    24.5217,
+    25.0435,
+    25.5652,
+    26.087,
+    26.6087,
+    27.1304,
+    27.6522,
+    28.1739,
+    28.6957,
+    29.2174,
+    29.7391
+  ],
+  "bar_times_s": [
+    0.0,
+    2.087,
+    4.1739,
+    6.2609,
+    8.3478,
+    10.4348,
+    12.5217,
+    14.6087,
+    16.6957,
+    18.7826,
+    20.8696,
+    22.9565,
+    25.0435,
+    27.1304,
+    29.2174
+  ],
+  "stem_gains": {
+    "drums": 0.85,
+    "bass": 0.8,
+    "chords": 0.7,
+    "melody": 0.75
+  },
+  "stems_metadata": {
+    "drums": {
+      "instrument": "Synthesized Acoustic/Analog Percussion",
+      "channels": 2,
+      "gain": 0.85
+    },
+    "bass": {
+      "instrument": "Subtractive Resonant Bass",
+      "channels": 2,
+      "gain": 0.8
+    },
+    "chords": {
+      "instrument": "Polyphonic Keys & Warm Pad",
+      "channels": 2,
+      "gain": 0.7
+    },
+    "melody": {
+      "instrument": "Lead Melodic Voice",
+      "channels": 2,
+      "gain": 0.75
+    }
+  },
+  "loudness": {
+    "mix_integrated_lufs": -16.0,
+    "mix_true_peak_dbtp": -1.42,
+    "target_lufs": -16.0,
+    "reconstruction_error_db": -120.0,
+    "stems_loudness": {
+      "drums": {
+        "integrated_lufs": -23.1,
+        "true_peak_dbtp": -4.46
+      },
+      "bass": {
+        "integrated_lufs": -17.84,
+        "true_peak_dbtp": -9.22
+      },
+      "chords": {
+        "integrated_lufs": -21.75,
+        "true_peak_dbtp": -9.97
+      },
+      "melody": {
+        "integrated_lufs": -17.89,
+        "true_peak_dbtp": -11.03
+      }
+    },
+    "stem_cleanliness_bleed_db": -120.0
+  },
+  "ducking_applied": false,
+  "volume_curve": null,
+  "models_providers": {
+    "provider_name": "incubrix-multitrack-synth",
+    "provider_version": "2.1.0",
+    "synthesis_mode": "algorithmic_multitrack_synthesis",
+    "ai_assisted": false,
+    "media_marked_ai_generated": true
+  },
+  "timings": {
+    "generation_s": 0.4705,
+    "total_processing_s": 1.9691
+  },
+  "cost_estimate": {
+    "currency": "USD",
+    "estimated_cost_usd": 0.000075,
+    "cost_per_minute_usd": 0.00015
+  },
+  "warnings": [],
+  "licence_rights": {
+    "status": "fully_commercial_safe",
+    "commercial_use_permitted": true,
+    "licence_terms": "MIT / Public Domain audio synthesizers; outputs are 100% royalty-free and monetizable.",
+    "sources_md_link": "SOURCES.md",
+    "copyright_free": true
+  }
+}

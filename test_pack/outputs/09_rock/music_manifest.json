@@ -1,0 +1,169 @@
+{
+  "job_id": "batch_job_091_1792773235",
+  "prompt": "driving rock instrumental with punchy live drums and distorted bass riff",
+  "duration_s": 22.0,
+  "actual_duration_s": 22.0,
+  "tempo_bpm": 128.0,
+  "key": "A minor",
+  "seed": 109,
+  "loopable": false,
+  "sections": [
+    {
+      "start_s": 0.0,
+      "mood": "intro",
+      "beat_index": 0
+    },
+    {
+      "start_s": 6.6,
+      "mood": "build",
+      "beat_index": 14
+    },
+    {
+      "start_s": 15.4,
+      "mood": "peak",
+      "beat_index": 32
+    }
+  ],
+  "beat_times_s": [
+    0.0,
+    0.4688,
+    0.9375,
+    1.4062,
+    1.875,
+    2.3438,
+    2.8125,
+    3.2812,
+    3.75,
+    4.2188,
+    4.6875,
+    5.1562,
+    5.625,
+    6.0938,
+    6.5625,
+    7.0312,
+    7.5,
+    7.9688,
+    8.4375,
+    8.9062,
+    9.375,
+    9.8438,
+    10.3125,
+    10.7812,
+    11.25,
+    11.7188,
+    12.1875,
+    12.6562,
+    13.125,
+    13.5938,
+    14.0625,
+    14.5312,
+    15.0,
+    15.4688,
+    15.9375,
+    16.4062,
+    16.875,
+    17.3438,
+    17.8125,
+    18.2812,
+    18.75,
+    19.2188,
+    19.6875,
+    20.1562,
+    20.625,
+    21.0938,
+    21.5625
+  ],
+  "bar_times_s": [
+    0.0,
+    1.875,
+    3.75,
+    5.625,
+    7.5,
+    9.375,
+    11.25,
+    13.125,
+    15.0,
+    16.875,
+    18.75,
+    20.625
+  ],
+  "stem_gains": {
+    "drums": 0.85,
+    "bass": 0.8,
+    "chords": 0.7,
+    "melody": 0.75
+  },
+  "stems_metadata": {
+    "drums": {
+      "instrument": "Synthesized Acoustic/Analog Percussion",
+      "channels": 2,
+      "gain": 0.85
+    },
+    "bass": {
+      "instrument": "Subtractive Resonant Bass",
+      "channels": 2,
+      "gain": 0.8
+    },
+    "chords": {
+      "instrument": "Polyphonic Keys & Warm Pad",
+      "channels": 2,
+      "gain": 0.7
+    },
+    "melody": {
+      "instrument": "Lead Melodic Voice",
+      "channels": 2,
+      "gain": 0.75
+    }
+  },
+  "loudness": {
+    "mix_integrated_lufs": -16.0,
+    "mix_true_peak_dbtp": -1.05,
+    "target_lufs": -16.0,
+    "reconstruction_error_db": -120.0,
+    "stems_loudness": {
+      "drums": {
+        "integrated_lufs": -23.09,
+        "true_peak_dbtp": -4.74
+      },
+      "bass": {
+        "integrated_lufs": -17.52,
+        "true_peak_dbtp": -9.56
+      },
+      "chords": {
+        "integrated_lufs": -22.07,
+        "true_peak_dbtp": -10.54
+      },
+      "melody": {
+        "integrated_lufs": -18.41,
+        "true_peak_dbtp": -11.37
+      }
+    },
+    "stem_cleanliness_bleed_db": -120.0
+  },
+  "ducking_applied": false,
+  "volume_curve": null,
+  "models_providers": {
+    "provider_name": "incubrix-multitrack-synth",
+    "provider_version": "2.1.0",
+    "synthesis_mode": "algorithmic_multitrack_synthesis",
+    "ai_assisted": false,
+    "media_marked_ai_generated": true
+  },
+  "timings": {
+    "generation_s": 0.3417,
+    "total_processing_s": 1.5205
+  },
+  "cost_estimate": {
+    "currency": "USD",
+    "estimated_cost_usd": 0.000055,
+    "cost_per_minute_usd": 0.00015
+  },
+  "warnings": [],
+  "licence_rights": {
+    "status": "fully_commercial_safe",
+    "commercial_use_permitted": true,
+    "licence_terms": "MIT / Public Domain audio synthesizers; outputs are 100% royalty-free and monetizable.",
+    "sources_md_link": "SOURCES.md",
+    "copyright_free": true
+  }
+}

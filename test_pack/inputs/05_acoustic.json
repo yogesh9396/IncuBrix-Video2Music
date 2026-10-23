@@ -1,0 +1,13 @@
+{
+  "prompt": "warm optimistic acoustic folk guitar for travel vlog and storytelling",
+  "duration_s": 22.0,
+  "tempo_bpm": 92.0,
+  "key": "G major",
+  "loopable": false,
+  "seed": 105,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": ["wav", "mp3"]
+  }
+}

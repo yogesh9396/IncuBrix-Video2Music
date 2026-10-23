@@ -1,0 +1,13 @@
+{
+  "prompt": "serene atmospheric ambient soundscape with gentle evolving chord pads",
+  "duration_s": 25.0,
+  "tempo_bpm": 65.0,
+  "key": "C major",
+  "loopable": true,
+  "seed": 108,
+  "output": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "formats": ["wav", "mp3"]
+  }
+}
