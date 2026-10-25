@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Simple IncuBrix UI -->
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>IncuBrix Audio UI</title>
+<style>
+body {font-family:Arial,sans-serif;background:#111;color:#eee;margin:0;padding:0;display:flex;flex-direction:column;align-items:center;}
+.container{max-width:600px;width:100%;margin-top:40px;padding:20px;background:#222;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,0.5);}
+h1{margin:0 0 20px;text-align:center;}
+.dropzone{border:2px dashed #555;padding:30px;text-align:center;cursor:pointer;margin-bottom:15px;position:relative;}
+.dropzone.dragover{border-color:#0af;background:#0a0a0a;}
+.file-info{margin-bottom:15px;}
+button{background:#0a84ff;color:#fff;border:none;padding:10px 20px;border-radius:4px;cursor:pointer;}
+button:disabled{background:#555;cursor:not-allowed;}
+.status{margin-top:15px;}
+.links a{color:#0a84ff;display:block;margin:5px 0;}
+#chooseBtn{margin-top:10px;background:#28a745;}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>IncuBrix Audio Processor</h1>
+<div id='dropzone' class='dropzone'>
+ Drag & drop a .wav or .mid file here, or click to select 
+ <button id='chooseBtn'>Choose Audio File</button>
+</div>
+<input type='file' id='fileInput' accept='.wav,.mid,.midi' style='display:none'>
+<div id='fileInfo' class='file-info'></div>
+<button id='processBtn' disabled>Process Audio</button>
+<div id='status' class='status'></div>
+<div id='links' class='links'></div>
+</div>
+<script>
+ const API_BASE = 'http://localhost:8000/api/v1';
+ const dropzone = document.getElementById('dropzone');
+ const fileInput = document.getElementById('fileInput');
+ const fileInfo = document.getElementById('fileInfo');
+ const processBtn = document.getElementById('processBtn');
+ const statusDiv = document.getElementById('status');
+ const linksDiv = document.getElementById('links');
+ const chooseBtn = document.getElementById('chooseBtn');
+ let selectedFile = null;
+ let pollInterval = null;
+ // Click dropzone (except button) opens file picker
+ dropzone.addEventListener('click', (e) => {
+   if (e.target.id !== 'chooseBtn') {
+     fileInput.click();
+   }
+ });
+ // Button explicitly opens file picker
+ chooseBtn.addEventListener('click', (e) => {
+   e.stopPropagation();
+   fileInput.click();
+ });
+ dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('dragover'); });
+ dropzone.addEventListener('dragleave', () => { dropzone.classList.remove('dragover'); });
+ dropzone.addEventListener('drop', e => { e.preventDefault(); dropzone.classList.remove('dragover'); handleFiles(e.dataTransfer.files); });
+ fileInput.addEventListener('change', () => { handleFiles(fileInput.files); });
+ function handleFiles(files) {
+   if (files.length === 0) return;
+   const f = files[0];
+   const ext = f.name.split('.').pop().toLowerCase();
+   if (!['wav','mid','midi'].includes(ext)) { alert('Only .wav or .mid/.midi files are allowed'); return; }
+   selectedFile = f;
+   fileInfo.textContent = `Selected: ${f.name} (${(f.size/1024).toFixed(1)} KB)`;
+   processBtn.disabled = false;
+ }
+ processBtn.addEventListener('click', async () => {
+   if (!selectedFile) return;
+   processBtn.disabled = true;
+   statusDiv.textContent = 'Uploading…';
+   try {
+     const form = new FormData();
+     form.append('file', selectedFile);
+     const up = await fetch(`${API_BASE}/upload`, {method: 'POST', body: form});
+     if (!up.ok) throw new Error('Upload failed');
+     // optional: consume response if needed
+     const jobResp = await fetch(`${API_BASE}/music/jobs`, {method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({})});
+     if (!jobResp.ok) throw new Error('Job creation failed');
+     const jobData = await jobResp.json();
+     const jobId = jobData.job_id;
+     statusDiv.textContent = 'Job started, waiting…';
+     pollInterval = setInterval(async () => {
+       const s = await fetch(`${API_BASE}/jobs/${jobId}`);
+       if (!s.ok) return;
+       const st = await s.json();
+       statusDiv.textContent = `Status: ${st.status} (${st.progress}%)`;
+       if (st.status === 'succeeded') {
+         clearInterval(pollInterval);
+         statusDiv.textContent = 'Job completed!';
+         if (st.artifacts) {
+           linksDiv.innerHTML = '';
+           for (const [name, url] of Object.entries(st.artifacts)) {
+             const a = document.createElement('a');
+             a.href = url;
+             a.textContent = name;
+             a.target = '_blank';
+             linksDiv.appendChild(a);
+           }
+         }
+       } else if (st.status === 'failed') {
+         clearInterval(pollInterval);
+         statusDiv.textContent = 'Job failed.';
+       }
+     }, 2000);
+   } catch (err) {
+     statusDiv.textContent = 'Error: ' + err.message;
+   } finally {
+     processBtn.disabled = false;
+   }
+ });
+</script>
+</body>
+</html>
